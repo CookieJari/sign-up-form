@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+.page-container{
+    background-color: greenyellow;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.sidebar-container{
+    flex: 1;
+}
+.bg-image{
+    background-color: rgb(201, 75, 36);
+    background-image: url(bg-image.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.main-container{
+    flex:2
+}
