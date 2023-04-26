@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
     box-sizing: border-box;
 }
@@ -10,6 +14,8 @@ body{
     width: 100vw;
     display: flex;
 }
+
+/*---------------------- SIDE BAR --------------*/
 
 .sidebar-container{
     position: relative;
@@ -28,7 +34,6 @@ body{
     position: absolute;
     top: 20%;
     width: 100%;
-    font-size: 5em;
     height: 1.4em;
 
     background-color: rgba(0, 0, 0, 0.603);
@@ -36,23 +41,79 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    font-size: 4.0em;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
     
 }
 .text{
     color: white;
     text-align: center;
 }
+
+
+/*---------------------- MAIN SECTION --------------*/
+
 .main-container{
     flex:2;
     display:flex;
     flex-direction: column;
+    background-color: rgb(247, 247, 239);
+    padding: 0px 15px;
+
+    font-family: 'Arial',sans-serif;
+    color: rgb(46, 46, 46);
 }
 
 .top-section{
     flex: 1;
-    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
 }
+
+.top-section-text{
+    font-weight: 700;
+    font-size: 1.5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+.top-section-text > div{
+    margin-bottom: 15px;
+}
+
 .form-section{
     flex: 2;
-    background-color: beige;
 }
+
+fieldset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: inherit;
+    border: none;
+    
+}
+
+.form-item{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 75%;
+    margin: 5px 0px;
+    background: none;
+    border: 1px solid rgba(75, 75, 75, 0.247);
+    border-radius: .25em;
+    height: 2.3em;
+}
+
+
