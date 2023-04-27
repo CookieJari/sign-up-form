@@ -195,6 +195,7 @@ input:focus{
 
 input.invalid-pass{
     outline: 1px solid red;
+    border-color: red;
 }
 input.invalid-pass+span::after{
     color: red;
