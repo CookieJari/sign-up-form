@@ -22,7 +22,7 @@ body{
     flex: 1;
 }
 .bg-image{
-    background-color: #BF4417;
+    background-color: #6e260c;
     background-image: url(bg-image.JPG);
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,6 +50,22 @@ body{
 .text{
     color: white;
     text-align: center;
+}
+.credits{
+    position: absolute;
+    bottom: 0px;
+    color: #d9d9d9b9;
+    width: 100%;
+    text-align: center;
+    font-size: .8em;
+    font-family: 'roboto','Roboto Condensed',sans-serif;
+    
+}
+.credits>a{
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: 'Roboto Condensed',sans-serif;
 }
 
 
@@ -105,10 +121,13 @@ fieldset{
     margin: 0;
     padding: 0px 10em 0px 2em;
     border: none;
-    box-shadow:  20px 20px 60px #d9d9d9,
-             -20px -20px 60px #ffffff;
-    -webkit-box-shadow:  20px 20px 60px #d9d9d9,
-             -20px -20px 60px #ffffff;
+
+    box-shadow:  10px 10px 15px #d9d9d9,
+             -10px -10px 15px #ffffff;
+    -webkit-box-shadow:  10px 10px 15px #d9d9d9,
+             -10px -10px 15px #ffffff;
+
+
 }
 
 legend{
@@ -163,4 +182,17 @@ input{
     border: 1px solid rgba(75, 75, 75, 0.247);
     border-radius: .25em;
     height: 2.5em;
+}
+
+input[type='password']:invalid{
+    border-color: red;
+}
+
+input:required{
+    border: 1px solid rgba(75, 75, 75, 0.247);
+}
+
+input:focus{
+    outline: 2px solid rgb(74, 104, 236);
+
 }
