@@ -60,10 +60,11 @@ body{
     display:flex;
     flex-direction: column;
     background-color: rgb(247, 247, 239);
-    padding: 0px 15px;
+    
+    
 
     font-family: 'Arial',sans-serif;
-    color: rgb(46, 46, 46);
+    color: rgba(46, 46, 46, 0.897);
 }
 
 .top-section{
@@ -72,6 +73,7 @@ body{
     justify-content: center;
     align-items: center;
     font-weight: 700;
+    padding: 0px 10em 0px 2em;
 }
 
 .top-section-text{
@@ -82,6 +84,8 @@ body{
     justify-content: center;
     align-items: left;
     flex-direction: column;
+
+    margin-top: 50px;
 }
 .top-section-text > div{
     margin-bottom: 15px;
@@ -89,6 +93,7 @@ body{
 
 .form-section{
     flex: 2;
+    
 }
 
 fieldset{
@@ -97,9 +102,19 @@ fieldset{
     justify-content: center;
     flex-wrap: wrap;
 
-    padding: inherit;
+    margin: 0;
+    padding: 0px 10em 0px 2em;
     border: none;
-    
+    box-shadow:  20px 20px 60px #d9d9d9,
+             -20px -20px 60px #ffffff;
+    -webkit-box-shadow:  20px 20px 60px #d9d9d9,
+             -20px -20px 60px #ffffff;
+}
+
+legend{
+    font-size:1.75em ;
+    margin-bottom: 1em;
+    font-weight: 600;
 }
 
 .form-item{
@@ -107,13 +122,45 @@ fieldset{
     display: flex;
     flex-direction: column;
 }
+label{
+    font-weight: 600;
+    font-size: 0.9em;
+    letter-spacing: .15em;
+    margin-bottom: 5px;
+}
+
+button[type=submit]{
+    border-radius: 1em;
+    margin: 30px 0px;
+    padding: 20px 50px;
+    margin: 2em; 
+    
+
+    border:none;
+    background-color: #BF4417;
+    color: aliceblue;
+    font-size: 1em;
+    font-weight: 900;
+
+}
+
+.login{
+    font-size: 1.1em;
+    padding: 0px 10em 0px 2em;
+    font-weight: 600;
+}
+a{
+    font-size: 1.1em;
+    font-weight: 900;
+    color:#BF4417;
+}
+/* ----------------- FORM INPUTS ------------*/
+
 input{
     width: 75%;
-    margin: 5px 0px;
+    margin-bottom: 20px;
     background: none;
     border: 1px solid rgba(75, 75, 75, 0.247);
     border-radius: .25em;
-    height: 2.3em;
+    height: 2.5em;
 }
-
-
