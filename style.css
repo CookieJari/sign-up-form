@@ -43,7 +43,7 @@ body{
     justify-content: center;
 
     font-size: 4.0em;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Roboto Condensed', 'Roboto',sans-serif;
     font-weight: 700;
     
 }
@@ -179,13 +179,9 @@ input{
     width: 75%;
     margin-bottom: 20px;
     background: none;
-    border: 1px solid rgba(75, 75, 75, 0.247);
+    border: 1px solid #E5E7EB;
     border-radius: .25em;
     height: 2.5em;
-}
-
-input[type='password']:invalid{
-    border-color: red;
 }
 
 input:required{
@@ -194,5 +190,22 @@ input:required{
 
 input:focus{
     outline: 2px solid rgb(74, 104, 236);
+
+}
+
+/*--- passowrd ---*/
+.pass-form{
+    position: relative;
+}
+
+input.invalid-pass{
+    border-color: red;
+}
+input.invalid-pass+span::after{
+    color: red;
+    position: absolute;
+    font-size: .75em;
+    content: "*Passwords do not match";
+    bottom: .45em;
 
 }
